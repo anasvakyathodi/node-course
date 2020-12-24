@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/js/app.js"></script>
-    <title>Help</title>
+    <title>Error</title>
 </head>
 <body>
-   <h1>Help</h1>
+    {{>header}}
+    <h1>
+        {{errorMessage}}
+    </h1>
+   <h6>Go Back to <a href="/">home</a></h6>
+    {{>footer}}
 </body>
 </html>

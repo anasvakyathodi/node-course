@@ -1,8 +1,96 @@
 h1 {
   color: gray;
 }
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 img {
   margin: auto;
-  width: 20%;
+  width: 50%;
   border-radius: 50%;
+}
+.navbar,
+.footer {
+  padding: 0.75rem 1rem;
+  background: rgb(235, 235, 235);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  margin-top: 1.5rem;
+  border-top: 0.3px solid rgba(107, 106, 106, 0.3);
+  border-bottom: 0.1rem solid rgba(206, 204, 204, 0.829);
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.menu-items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 1rem 0;
+}
+.menu-items a {
+  color: rgb(107, 106, 106);
+  text-decoration: none;
+  outline: none;
+  margin: 0 0.5rem;
+}
+.menu-items > a:hover {
+  color: black;
+}
+.credits {
+  color: rgb(99, 99, 99);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+.inline-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.inline-form > * {
+  margin: 0.2rem;
+  padding: 0.5rem 0.3rem;
+}
+.inline-form input {
+  display: flex;
+  border: 2px solid #ccc;
+  flex: 4;
+  line-height: 0;
+}
+.inline-form button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background: black;
+  color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+.inline-form button:focus {
+  background: rgb(126, 125, 125);
+  color: rgb(248, 246, 246);
+  transition-delay: 2s;
+}
+.weather-content {
+  padding: 1rem;
+  margin: 1rem auto;
 }
