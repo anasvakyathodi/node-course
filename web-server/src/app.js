@@ -8,10 +8,11 @@ const { printWeatherData, displayError } = require("./utils/printFunctions");
 const port = process.env.PORT || 3000;
 const app = express();
 const geo_token = process.env.GEOCODE_TOKEN;
-
+const cors = require("cors");
 //weather api parameters
 const weather_token = process.env.WEATHER_TOKEN;
 //setting template
+app.use(cors());
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "../templates/views"));
 app.use(express.static(path.join(__dirname, "../public")));
