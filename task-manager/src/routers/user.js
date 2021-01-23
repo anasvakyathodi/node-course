@@ -19,6 +19,7 @@ router.get("/users/:id", async (req, res) => {
   }
 });
 
+//user registration
 router.post("/users", async (req, res) => {
   try {
     const newUser = new User(req.body);
